@@ -1,39 +1,50 @@
 import React from "react";
-
+import appColors from "./services/colors"
 
 function TaskBox() {
   return (
     <div
       style={{
-        backgroundColor: "black",
+       backgroundColor :"black",
         display: "flex",
-        justifyContent: "space-around",
+        justifyContent: "space-evenly",
+        alignItems : "center",
+        width : "300px"
       }}
     >
-      <form>
+    
         <input
           type="text"
           placeholder="    write your tasks"
           style={{
             height: "30px",
-            width: "250px",
-            borderRadius: "20px",
-            marginLeft: "5px",
+            width: "220px",
+            borderRadius: "10px",
+            marginLeft:"10px",
+            backgroundColor :appColors.secondary,
+            border :"none"
           }}
         />
-        <button
+        <div
           style={{
-            height: "30PX",
+            height: "30px",
             width: "30px",
             borderRadius: "30px",
             backgroundColor: "red",
-            color: "white",
-            marginLeft: "10px"
+            backgroundColor: appColors.primary,
+            border :"none",
+            color : "whitesmoke",
+            display: "flex",
+            justifyContent: "center",
+            alignItems :"center",
+            fontSize:"15px",
+            fontWeight : "bolder"
+            
           }}
         >
           +
-        </button>
-      </form>
+        </div>
+     
     </div>
   );
 }

@@ -1,34 +1,44 @@
 import React from "react";
-import { AiTwotoneDelete } from "react-icons/ai";
-import { AiFillEdit } from "react-icons/ai";
+import { MdDeleteOutline } from "react-icons/md";
+import { FiEdit } from "react-icons/fi";
+import appColors from "./services/colors";
+import { MdRadioButtonUnchecked } from "react-icons/md";
+
 function TaskList() {
   return (
     <div
       style={{
-        borderRadius: "10px",
-        height: "40px",
-        width: "300px",
-        backgroundColor: "gray",
+        border: `2px solid ${appColors.borderbox}`,
+        borderRadius: "7px",
+        height: "35px",
+        width: "270px",
+        backgroundColor: appColors.secondary,
         textAlign: "center",
         display: "flex",
         justifyContent: "space-between",
+        alignItems :"center"
       }}
     >
-      <div className="check" style={{ margin: "5px" }}>
-        <input type="checkbox" />
-        Task
-      </div>
+      <MdRadioButtonUnchecked
+        style={{
+          border: "none",
+          color: appColors.primary,
+          margin : "10px"
+        }}
+      />
       <div
         style={{
           display: "flex",
-          height: "20px",
           marginRight: "5px",
-          marginTop: "10px",
+          alignItems: "center",
+          justifyContent: "center",
         }}
       >
-        <AiFillEdit style={{ marginRight: "10px", color: "black" }} />
+        <FiEdit
+          style={{ marginRight: "10px", color: "whitesmoke", height: "14px" }}
+        />
 
-        <AiTwotoneDelete style={{ color: "black" }} />
+        <MdDeleteOutline style={{ color: "black", color: "whitesmoke" }} />
       </div>
     </div>
   );

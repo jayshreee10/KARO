@@ -1,5 +1,6 @@
 import React from "react";
 import ToDo from "./ToDo";
+import "./App.css";
 function App() {
   return (
     <div
@@ -8,8 +9,8 @@ function App() {
         height: "100vh",
         display: "flex",
         justifyContent: "center",
-        padding: "0px",
-        margin: "0px",
+        alignItems : "center",
+
       }}
     >
       <ToDo />
