@@ -4,16 +4,33 @@ function Count() {
   return (
     <div
       style={{
-        border :"5px solid gray",
-        borderRadius: "30px",
-        height: "80px",
+        border: "2px solid gray",
+        borderRadius: "20px",
+        height: "90px",
         width: "300px",
         backgroundColor: "black",
         color: "white",
-        textAlign: "center",
+        display: "flex",
+        justifyContent: "space-around" ,
+        alignItems:"centre",
+        
       }}
     >
-      Todo Done
+      Todo done
+     
+      <div
+        className="TaskDone"
+        style={{
+          borderRadius: "70px",
+          height: "70px",
+          width: "70px",
+          background: "red",
+          textAlign:"center",
+          marginTop: "10px"
+        }}
+      >
+       <div className="counter" style={{marginTop:"25px"}}>1/3</div>
+      </div>
     </div>
   );
 }

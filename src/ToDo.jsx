@@ -14,6 +14,7 @@ function ToDo() {
         flexDirection: "column",
         justifyContent: "space-around",
         alignItems: "center",
+        marginTop :"200px"
       }}
     >
       <Count />

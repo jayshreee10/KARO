@@ -1,18 +1,26 @@
 import React from "react";
 
+
 function TaskBox() {
   return (
     <div
       style={{
-        backgroundColor: "white",
-        height: "50px",
-        width: "300px",
+        backgroundColor: "black",
         display: "flex",
         justifyContent: "space-around",
       }}
     >
       <form>
-        <input type="text" placeholder="write your tasks" />
+        <input
+          type="text"
+          placeholder="    write your tasks"
+          style={{
+            height: "30px",
+            width: "250px",
+            borderRadius: "20px",
+            marginLeft: "5px",
+          }}
+        />
         <button
           style={{
             height: "30PX",
@@ -20,7 +28,7 @@ function TaskBox() {
             borderRadius: "30px",
             backgroundColor: "red",
             color: "white",
-            marginLeft: "10px",
+            marginLeft: "10px"
           }}
         >
           +
