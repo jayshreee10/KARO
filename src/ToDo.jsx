@@ -14,13 +14,10 @@ function ToDo() {
         flexDirection: "column",
         justifyContent: "space-around",
         alignItems: "center",
-        
       }}
     >
       <Count />
       <TaskBox />
-      <TaskList />
-      <TaskList />
       <TaskList />
     </div>
   );
