@@ -5,11 +5,14 @@ function TaskBox() {
   return (
     <div
       style={{
-       backgroundColor :"black",
+      //  backgroundColor :"pink",
         display: "flex",
-        justifyContent: "space-evenly",
+        justifyContent: "center",
         alignItems : "center",
-        width : "300px"
+        width : "27vw",
+        height:"10vh",
+  
+
       }}
     >
     
@@ -17,34 +20,35 @@ function TaskBox() {
           type="text"
           placeholder="    write your tasks"
           style={{
-            height: "30px",
-            width: "220px",
-            borderRadius: "10px",
-            marginLeft:"10px",
+            height: "5.5vh",
+            width: "19vw",
+            borderRadius: "5px",
+            marginLeft:"3vw",
             backgroundColor :appColors.secondary,
             border :"none"
           }}
         />
-        <div
+        <button className="add"
+        
           style={{
             height: "30px",
             width: "30px",
             borderRadius: "30px",
-            backgroundColor: "red",
             backgroundColor: appColors.primary,
             border :"none",
             color : "whitesmoke",
             display: "flex",
             justifyContent: "center",
             alignItems :"center",
-            fontSize:"15px",
-            fontWeight : "bolder"
+            fontSize:"16px",
+            fontWeight : "bold",
+            marginLeft:"1vw",
             
           }}
-        >
+          >
           +
-        </div>
-     
+        
+        </button>
     </div>
   );
 }

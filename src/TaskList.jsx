@@ -9,23 +9,30 @@ function TaskList() {
     <div
       style={{
         border: `2px solid ${appColors.borderbox}`,
-        borderRadius: "7px",
-        height: "35px",
-        width: "270px",
+        borderRadius: "5px",
+        height: "5.5vh",
+        width: "19vw",
         backgroundColor: appColors.secondary,
         textAlign: "center",
         display: "flex",
         justifyContent: "space-between",
-        alignItems :"center"
+        alignItems :"center",
+       
       }}
     >
-      <MdRadioButtonUnchecked
+      {/* <MdRadioButtonUnchecked
         style={{
           border: "none",
           color: appColors.primary,
           margin : "10px"
         }}
-      />
+      /> */}
+      <input type="checkbox" style={{
+          border: "1px solid red",
+          color: appColors.primary,
+          margin : "10px",
+        }}/>
+
       <div
         style={{
           display: "flex",
