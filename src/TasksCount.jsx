@@ -33,14 +33,14 @@ function Count() {
         className="TaskDone"
         style={{
           borderRadius: "50%",
-          height: "13.5vh",
+          height: "14vh",
           width: "7vw",
           background: "red",
           textAlign: "center",
           // marginTop: "15px"
         }}
       >
-        <div className="counter" style={{ marginTop: "25px" }}>
+        <div className="counter" style={{ marginTop: "40px" }}>
           1/3
         </div>
       </div>
