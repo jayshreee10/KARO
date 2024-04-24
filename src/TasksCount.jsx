@@ -5,14 +5,16 @@ function Count() {
     <div
       style={{
         border: `2px solid ${appColors.borderbox}`,
-        borderRadius: "17px",
-        height: "110px",
-        width: "270px",
-        backgroundColor: "black",
+        borderRadius: "12px",
+        height: "20vh",
+        width: "29vw",
+        // backgroundColor: "pink",
         color: "white",
         display: "flex",
         justifyContent: "space-around",
         alignItems: "center",
+        position:"absolute",
+        top:"9vh"
       }}
     >
       <div>
@@ -20,7 +22,7 @@ function Count() {
         <h5
           style={{
             color: appColors.borderbox,
-            fontWeight: "bolder",
+            // fontWeight: "",
             marginLeft: "3px",
           }}
         >
@@ -30,9 +32,9 @@ function Count() {
       <div
         className="TaskDone"
         style={{
-          borderRadius: "75px",
-          height: "75px",
-          width: "75px",
+          borderRadius: "50%",
+          height: "13.5vh",
+          width: "7vw",
           background: "red",
           textAlign: "center",
           // marginTop: "15px"

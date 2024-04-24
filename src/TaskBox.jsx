@@ -9,9 +9,10 @@ function TaskBox() {
         display: "flex",
         justifyContent: "center",
         alignItems : "center",
-        width : "27vw",
+        width : "50vw",
         height:"10vh",
-  
+        position:"absolute",
+        top:"35vh"
 
       }}
     >
@@ -20,19 +21,20 @@ function TaskBox() {
           type="text"
           placeholder="    write your tasks"
           style={{
-            height: "5.5vh",
-            width: "19vw",
+            height: "7vh",
+            width: "29.7vw",
             borderRadius: "5px",
-            marginLeft:"3vw",
+            marginLeft:"6vw",
             backgroundColor :appColors.secondary,
-            border :"none"
+            border :"none",
+           
           }}
         />
         <button className="add"
         
           style={{
-            height: "30px",
-            width: "30px",
+            height: "50px",
+            width: "50px",
             borderRadius: "30px",
             backgroundColor: appColors.primary,
             border :"none",
@@ -42,7 +44,7 @@ function TaskBox() {
             alignItems :"center",
             fontSize:"16px",
             fontWeight : "bold",
-            marginLeft:"1vw",
+            marginLeft:"3vw",
             
           }}
           >
