@@ -17,8 +17,8 @@ function ToDo() {
       }}
     >
       <Count />
-      <TaskBox />
-      <TaskList />
+      <TaskBox/>
+      {/* <TaskList /> */}
     </div>
   );
 }

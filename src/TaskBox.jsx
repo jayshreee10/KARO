@@ -1,7 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import appColors from "./services/colors"
 
 function TaskBox() {
+
+const [task,SetTask]=useState("")
+function addTasks(task){
+console.log (task)
+}
+
   return (
     <div
       style={{
@@ -19,19 +25,20 @@ function TaskBox() {
     
         <input
           type="text"
-          placeholder="    write your tasks"
+          placeholder="Write your tasks"
+          onChange={(e)=> SetTask(e.target.value)}
           style={{
+            paddingLeft:"10px",
             height: "7vh",
             width: "29.7vw",
             borderRadius: "5px",
             marginLeft:"6vw",
             backgroundColor :appColors.secondary,
             border :"none",
-           
           }}
         />
         <button className="add"
-        
+          onClick={()=>{ addTasks(task)}}
           style={{
             height: "50px",
             width: "50px",
