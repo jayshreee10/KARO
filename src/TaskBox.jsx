@@ -55,7 +55,7 @@ console.log (task)
             
           }}
           >
-          -
+          +
         
         </button>
     </div>
