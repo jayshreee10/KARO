@@ -1,5 +1,5 @@
 # KARO
-- Karo is a straightforward todo app built with React and Vite. It allows users to create, manage, and complete tasks efficiently.
+- Karo is a todo app built with React and Vite. It allows users to create, manage, and complete tasks efficiently.
 
 ## Features
 - **Task Management :**  Add, edit, and delete tasks.
