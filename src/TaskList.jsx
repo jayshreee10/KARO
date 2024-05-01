@@ -4,7 +4,9 @@ import { FiEdit } from "react-icons/fi";
 import appColors from "./services/colors";
 
 
-function TaskList() {
+function TaskList(props) {
+  const data = props.data
+
   return (
     <div
       style={{
@@ -22,11 +24,16 @@ function TaskList() {
       }}
     >
 
-      <input type="checkbox" style={{
+      <div type="checkbox" style={{
           border: "1px solid red",
           color: appColors.primary,
           margin : "10px",
-        }}/>
+        }}
+        
+        >
+          {data}
+        </div>
+       
 
       <div
         style={{

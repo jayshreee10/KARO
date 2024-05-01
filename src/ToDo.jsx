@@ -18,7 +18,6 @@ function ToDo() {
     >
       <Count />
       <TaskBox/>
-      {/* <TaskList /> */}
     </div>
   );
 }

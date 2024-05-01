@@ -1,11 +1,17 @@
 import React, { useState } from "react";
-import appColors from "./services/colors"
+import appColors from "./services/colors";
+import TaskList from "./TaskList";
 
 function TaskBox() {
 
-const [task,SetTask]=useState("")
-function addTasks(task){
-console.log (task)
+const [task,SetTask]=useState("");
+const [items,SetItems]=useState([])
+
+function addTasks(){
+  if (task!= ""){
+  SetItems([...items,task])
+  console.log (items)
+}
 }
 
   return (
@@ -26,6 +32,7 @@ console.log (task)
         <input
           type="text"
           placeholder="Write your tasks"
+          value={task}
           onChange={(e)=> SetTask(e.target.value)}
           style={{
             paddingLeft:"10px",
@@ -38,7 +45,7 @@ console.log (task)
           }}
         />
         <button className="add"
-          onClick={()=>{ addTasks(task)}}
+          onClick={()=>{addTasks()}}
           style={{
             height: "50px",
             width: "50px",
@@ -58,6 +65,7 @@ console.log (task)
           +
         
         </button>
+        <TaskList data = { task }></TaskList>
     </div>
   );
 }
