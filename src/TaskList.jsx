@@ -24,8 +24,7 @@ function TaskList(props) {
       }}
     >
 
-      <div type="checkbox" style={{
-          border: "1px solid red",
+      <div style={{
           color: appColors.primary,
           margin : "10px",
         }}
