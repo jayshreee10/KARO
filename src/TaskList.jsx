@@ -20,7 +20,7 @@ function TaskList(props) {
         justifyContent: "space-between",
         alignItems :"center",
        position:"absolute",
-       top:"50vh"
+       top:"10vh"
       }}
     >
 

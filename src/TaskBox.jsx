@@ -37,7 +37,7 @@ function addTasks(){
           style={{
             paddingLeft:"10px",
             height: "7vh",
-            width: "29.7vw",
+            width: "29vw",
             borderRadius: "5px",
             marginLeft:"6vw",
             backgroundColor :appColors.secondary,
