@@ -3,9 +3,9 @@ import { MdDeleteOutline } from "react-icons/md";
 import { FiEdit } from "react-icons/fi";
 import appColors from "./services/colors";
 
-
 function TaskList(props) {
-  const data = props.data
+  const data = props.data;
+//  data.map((todo) => <li key={todo.toString()}>{todo}</li>);
 
   return (
     <div
@@ -18,21 +18,19 @@ function TaskList(props) {
         textAlign: "center",
         display: "flex",
         justifyContent: "space-between",
-        alignItems :"center",
-       position:"absolute",
-       top:"10vh"
+        alignItems: "center",
+        // position: "absolute",
+        // top: "10vh",
       }}
     >
-
-      <div style={{
+      <div
+        style={{
           color: appColors.primary,
-          margin : "10px",
+          margin: "10px",
         }}
-        
-        >
-          {data}
-        </div>
-       
+      >
+      {data}
+      </div>
 
       <div
         style={{
@@ -40,7 +38,7 @@ function TaskList(props) {
           marginRight: "5px",
           alignItems: "center",
           justifyContent: "center",
-          top:"40vh"
+          top: "40vh",
         }}
       >
         <FiEdit

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import appColors from "./services/colors";
 import TaskList from "./TaskList";
+import Task from "./task"
 
 function TaskBox() {
 
@@ -17,14 +18,14 @@ function addTasks(){
   return (
     <div
       style={{
-      //  backgroundColor :"pink",
+       backgroundColor :"pink",
         display: "flex",
         justifyContent: "center",
         alignItems : "center",
         width : "50vw",
-        height:"10vh",
-        position:"absolute",
-        top:"35vh"
+        height:"50vh",
+        // position:"absolute",
+        // top:"35vh"
 
       }}
     >
@@ -65,7 +66,8 @@ function addTasks(){
           +
         
         </button>
-        <TaskList data = { task }></TaskList>
+        
+        <Task items={items}></Task>
     </div>
   );
 }

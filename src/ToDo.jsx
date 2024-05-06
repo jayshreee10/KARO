@@ -7,7 +7,7 @@ function ToDo() {
     <div
       className="background"
       style={{
-        backgroundColor: "black",
+        // backgroundColor: "black",
         height: "50vh",
         width: "70vh",
         display: "flex",
