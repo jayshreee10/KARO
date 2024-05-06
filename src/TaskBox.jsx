@@ -16,14 +16,16 @@ function addTasks(){
 }
 
   return (
+    <div >
     <div
       style={{
-       backgroundColor :"pink",
+      //  backgroundColor :"pink",
         display: "flex",
         justifyContent: "center",
+        // flexDirection:"column",
         alignItems : "center",
-        width : "50vw",
-        height:"50vh",
+        width : "100vw",
+        height:"10vh",
         // position:"absolute",
         // top:"35vh"
 
@@ -66,7 +68,7 @@ function addTasks(){
           +
         
         </button>
-        
+        </div>
         <Task items={items}></Task>
     </div>
   );
