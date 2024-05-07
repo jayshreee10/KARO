@@ -3,7 +3,7 @@ import TaskList from "./TaskList";
 function task(props) {
   const items = props.items;
   return (
-    <div style={{height:"100vh",width:"100vw"}}>
+    <div>
       
       <ul>
         {items.map((item,i)=>{

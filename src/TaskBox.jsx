@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import appColors from "./services/colors";
-import TaskList from "./TaskList";
 import Task from "./task"
 
 function TaskBox() {
@@ -26,7 +25,7 @@ function addTasks(){
         alignItems : "center",
         width : "100vw",
         height:"10vh",
-        // position:"absolute",
+        // position:"fixed",
         // top:"35vh"
 
       }}
@@ -42,6 +41,7 @@ function addTasks(){
             height: "7vh",
             width: "29vw",
             borderRadius: "5px",
+            color:"white",
             marginLeft:"6vw",
             backgroundColor :appColors.secondary,
             border :"none",

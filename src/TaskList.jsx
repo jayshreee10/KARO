@@ -33,7 +33,7 @@ function TaskList(props) {
       >
         <div
           style={{
-            color: appColors.primary,
+            color: "white",
             margin: "10px",
           }}
         >

@@ -9,8 +9,7 @@ function Count() {
           borderRadius: "12px",
           height: "20vh",
           width: "29vw",
-          
-          margin:"5%",
+          // backgroundColor:"blue",
           color: "white",
           display: "flex",
           justifyContent: "space-around",

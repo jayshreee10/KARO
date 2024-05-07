@@ -12,7 +12,7 @@ function ToDo() {
         width: "100vw",
         display: "flex",
         flexDirection: "column",
-        justifyContent: "space-around",
+        justifyContent: "center",
         alignItems: "center",
       }}
     >
